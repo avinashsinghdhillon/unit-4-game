@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Question: Do I need one or the other of the two below -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 </head>
 <body class="bg" background="assets/images/Star-Wars-BG.jpeg">
     <header>
@@ -15,7 +19,7 @@
 
     <div id="mainContainer">
         <section id="charListSec">
-            <div class="charIcons">
+            <div id="charIcons">
                 <img id="darthVaderIcon" class="icon" src="assets/images/Darth-Vader.jpg" alt="Darth Vader">
                 <img id="hansSoloIcon" class="icon" src="assets/images/Hans-Solo.jpg" alt="Hans Solo">
                 <img id="lukeSkywalkerIcon" class="icon" src="assets/images/Luke-Skywalker.jpg" alt="Luke Skywalker">
@@ -30,27 +34,46 @@
             <p  class="secondaryHeadings">
                 Your character
             </p>
+            <div id="yourCharIcon">
+                
+            </div>
         </section>
 
         <section id="ememiesAvailSec" class="hidden">
             <p class="secondaryHeadings">
-                Enemies Available to Attack
+                Select Enemy to Attack
             </p>
+            <div id="enemyCharIcons">
+            
+            </div>
         </section>
 
         <section id="fightSec" class="hidden">
-            <p class="secondaryHeadings">
-                Fight Section
+            <p class="secondaryHeadings fight">
+                Combat Details
             </p>
+            <button id="butAtt" class="fight">
+                Attack
+            </button>
+            <p id="dmgDealt" class="fight">
+                    Your damage done
+            </p>
+            <p id="cntrAttDmgDealt" class="fight">
+                    Counter attack damage dealt by you enemy
+            </p>
+
         </section>
 
         <section id="defenderSec" class="hidden">
             <p class="secondaryHeadings">
                 Defender
             </p>
+            <div id="enemyIcon">
+            
+            </div>
         </section>
 
     </div>
-    
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>

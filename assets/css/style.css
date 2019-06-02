@@ -24,7 +24,27 @@ body, html {
 
 .icon {
     margin: 10px;
-    border: 2px solid rgb(243, 239, 7);
+    border: 4px solid rgb(243, 239, 7);
+}
+
+#fightSec {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    background: rgba(164, 240, 13, 0.26);
+}
+
+.fight {
+    margin-left: 10px;
+    font-size: 20px;
+    color: darkgreen;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    border-radius: 25px;
 }
 
 .secondaryHeadings {
