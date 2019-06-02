@@ -1,0 +1,38 @@
+body, html {
+    height: 100%;
+}
+  
+.bg {   
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+}
+
+#heading {
+    color: rgb(243, 239, 7);
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.charIcons {
+    display: inline;
+
+}
+
+.icon {
+    margin: 10px;
+    border: 2px solid rgb(243, 239, 7);
+}
+
+.secondaryHeadings {
+    color: rgb(243, 239, 7);
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.hidden {
+    opacity: 1;
+}
