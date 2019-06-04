@@ -11,50 +11,72 @@ body, html {
 }
 
 #heading {
-    color: rgb(243, 239, 7);
+    color: yellow;
     text-align: center;
-    font-size: 44px;
+    font-size: 36px;
     font-weight: 600;
 }
 
-.charIcons {
-    display: inline;
-
-}
-
-.icon {
-    margin: 10px;
-    border: 4px solid rgb(243, 239, 7);
-}
-
-#fightSec {
+#allCharStats {
+    float: left;
+    margin-top: -35px;
+    width: 250px;
+    color:  rgb(19, 4, 1);
     -moz-box-shadow:    inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow:         inset 0 0 10px #000000;
     background: rgba(164, 240, 13, 0.26);
 }
 
-.fight {
+#charIcons {
+    clear: both;
+    display: inline-flex;
+}
+
+#enemyCharIcons {
+    display: inline-flex;
+}
+
+.icon {
+    margin: 10px;
+    border: 10px solid yellow;
+}
+
+.stats {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#fightSec, #resetSec {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    background: rgba(164, 240, 13, 0.26);
+}
+
+.fight, .reset {
     margin-left: 10px;
     font-size: 20px;
-    color: darkgreen;
+    color: rgb(19, 4, 1);
 }
 
 button {
     width: 150px;
     height: 35px;
-    background-color: red;
+    background-color: rgb(17, 63, 3);
     border-radius: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-color: 
 }
 
 .secondaryHeadings {
-    color: rgb(243, 239, 7);
-    font-size: 24px;
+    color:  rgb(19, 4, 1);
+    font-size: 20px;
     margin-left: 10px;
+    font-weight: 600;
 }
 
 .hidden {
-    opacity: 1;
+    opacity: 0;
 }

@@ -7,9 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Question: Do I need one or the other of the two below -->
-    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 </head>
 <body class="bg" background="assets/images/Star-Wars-BG.jpeg">
@@ -18,7 +15,15 @@
     </header>
 
     <div id="mainContainer">
-        <section id="charListSec">
+        <section id="charListSec" class="pointer">
+            <div id="allCharStats" class="hidden">
+                <ul>
+                    <li id="allCharName" class="stats"></li>
+                    <li id="allCharHP" class="stats"></li>
+                    <li id="allCharAtt" class="stats"></li>
+                    <li id="allCharCntrAtt" class="stats"></li>
+                </ul>
+            </div>
             <div id="charIcons">
                 <img id="hansSolo" class="icon" src="assets/images/Hans-Solo.jpg" alt="Hans Solo">
                 <img id="lukeSkywalker" class="icon" src="assets/images/Luke-Skywalker.jpg" alt="Luke Skywalker">
@@ -26,12 +31,12 @@
                 <img id="darthVader" class="icon" src="assets/images/Darth-Vader.jpg" alt="Darth Vader">
             </div>
             <p id="selectCharMsg" class="secondaryHeadings">
-                Select your character
+                Select your character to start the game.
             </p>
         </section>
 
-        <section id="yourCharSec" class="hidden">
-            <p  class="secondaryHeadings">
+        <section id="yourCharSec" class="hidden pointer">
+            <p  id="yourCharHealthMsg" class="secondaryHeadings">
                 Your character
             </p>
             <div id="yourCharIcon">
@@ -39,8 +44,8 @@
             </div>
         </section>
 
-        <section id="ememiesAvailSec" class="hidden">
-            <p class="secondaryHeadings">
+        <section id="enemiesAvailSec" class="hidden pointer">
+            <p id="enemiesAvailMsg" class="secondaryHeadings">
                 Select Enemy to Attack
             </p>
             <div id="enemyCharIcons">
@@ -56,19 +61,36 @@
                 Attack
             </button>
             <p id="dmgDealt" class="fight">
-                    Your damage done
+                    Your damage done:
             </p>
             <p id="cntrAttDmgDealt" class="fight">
-                    Counter attack damage dealt by your enemy
+                    Counter attack damage dealt by your enemy:
             </p>
 
         </section>
 
-        <section id="defenderSec" class="hidden">
-            <p class="secondaryHeadings">
+        <section id="defenderSec" class="hidden pointer">
+            <p id="enemyHealthMsg" class="secondaryHeadings">
                 Defender
             </p>
             <div id="enemyIcon">
+            
+            </div>
+        </section>
+        <section id="resetSec" class="hidden">
+            <p id="resetMsg" class="secondaryHeadings reset">
+                Reset Game
+            </p>
+            <button id="butReset" class="reset">
+                Reset
+            </button>
+        </section>
+
+        <section id="defeatedSec" class="hidden">
+            <p class="secondaryHeadings">
+                Defeated
+            </p>
+            <div id="defeatedEnemyIcons">
             
             </div>
         </section>
